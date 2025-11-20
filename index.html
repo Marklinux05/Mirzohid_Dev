@@ -251,26 +251,40 @@
       </p>
 
       <div class="mt-6">
-        <a href="mailto:mirzohida524@gmail.com"
+        <a href="https://t.me/outer_space_and"
            class="px-5 py-3 btn-grad rounded-xl text-white font-semibold hover:scale-105 transition">
            Написать
         </a>
       </div>
     </div>
 
-    <form class="md:w-1/2 w-full">
-      <div class="grid grid-cols-1 gap-3">
-        <input class="p-3 rounded-md bg-white/5 border border-white/10 text-white neon-block"
-               placeholder="Имя" />
-        <input class="p-3 rounded-md bg-white/5 border border-white/10 text-white neon-block"
-               placeholder="Email" />
-        <textarea class="p-3 rounded-md bg-white/5 border border-white/10 text-white neon-block"
-                  rows="4" placeholder="Сообщение"></textarea>
-        <button type="submit" class="px-4 py-2 btn-grad rounded-md text-white hover:scale-105 transition">
+    <form class="md:w-1/2 w-full"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <input type="hidden" name="access_key" value="e79d4655-9152-4728-b67c-23bb51be5075">
+
+    <div class="grid grid-cols-1 gap-3">
+
+        <input name="name"
+               class="p-3 rounded-md bg-white/5 border border-white/10 text-white neon-block"
+               placeholder="Имя" required />
+
+        <input name="email" type="email"
+               class="p-3 rounded-md bg-white/5 border border-white/10 text-white neon-block"
+               placeholder="Email" required />
+
+        <textarea name="message" rows="4"
+                  class="p-3 rounded-md bg-white/5 border border-white/10 text-white neon-block"
+                  placeholder="Сообщение" required></textarea>
+
+        <button type="submit"
+                class="px-4 py-2 btn-grad rounded-md text-white hover:scale-105 transition">
           Отправить
         </button>
-      </div>
-    </form>
+
+    </div>
+</form>
 
   </div>
 </section>
